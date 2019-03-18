@@ -37,7 +37,8 @@ namespace CarvedRock.Api
             services.AddScoped<CarvedRockSchema>();
 
             services.AddGraphQL(o => { o.ExposeExceptions = true; })
-                .AddGraphTypes(ServiceLifetime.Scoped);
+                .AddGraphTypes(ServiceLifetime.Scoped)
+                .AddDataLoader(); //adds caching layer essentially for refreshes
         }
 
         public void Configure(IApplicationBuilder app, CarvedRockDbContext dbContext)

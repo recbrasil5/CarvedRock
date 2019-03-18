@@ -11,3 +11,4 @@ C:\dev\GraphQL\CarvedRock\CarvedRock.Api\obj\Debug\netcoreapp2.1\CarvedRock.Api.
 C:\dev\GraphQL\CarvedRock\CarvedRock.Api\bin\Debug\netcoreapp2.1\CarvedRock.Api.pdb
 C:\dev\GraphQL\CarvedRock\CarvedRock.Api\obj\Debug\netcoreapp2.1\CarvedRock.Api.dll
 C:\dev\GraphQL\CarvedRock\CarvedRock.Api\obj\Debug\netcoreapp2.1\CarvedRock.Api.pdb
+C:\dev\GraphQL\CarvedRock\CarvedRock.Api\obj\Debug\netcoreapp2.1\CarvedRock.Api.csprojAssemblyReference.cache
