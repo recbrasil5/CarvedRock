@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CarvedRock.Api.Migrations
 {
     [DbContext(typeof(CarvedRockDbContext))]
-    [Migration("20190318182440_InitialCreate")]
+    [Migration("20190318193435_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

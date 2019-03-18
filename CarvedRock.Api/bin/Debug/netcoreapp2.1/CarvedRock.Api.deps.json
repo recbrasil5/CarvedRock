@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "e3014619d33539af779f36d1ff39a3345cbf2fd8"
+    "signature": "9c066da26106b5956c0cd466c650bda4e522dd2c"
   },
   "compilationOptions": {
     "defines": [
@@ -26,6 +26,7 @@
         "dependencies": {
           "GraphQL": "2.4.0",
           "GraphQL.Server.Transports.AspNetCore": "3.4.0",
+          "GraphQL.Server.Ui.Playground": "3.4.0",
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.AspNetCore.Razor.Design": "2.1.2",
           "Microsoft.NETCore.App": "2.1.0",
@@ -103,6 +104,20 @@
         },
         "compile": {
           "lib/netstandard2.0/GraphQL.Server.Transports.AspNetCore.dll": {}
+        }
+      },
+      "GraphQL.Server.Ui.Playground/3.4.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Abstractions": "2.1.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/GraphQL.Server.Ui.Playground.dll": {
+            "assemblyVersion": "3.4.0.0",
+            "fileVersion": "3.4.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/GraphQL.Server.Ui.Playground.dll": {}
         }
       },
       "Microsoft.AspNetCore.Razor.Design/2.1.2": {},
@@ -3317,6 +3332,13 @@
       "sha512": "sha512-rnSNK15Tfyljzc02inG/aWyhW+vbYJizr6/L23MSIX4yBm8mVM23SVTNOxwYCXgx7v1Tc3/hK+9UcW/7V1Dx2Q==",
       "path": "graphql.server.transports.aspnetcore/3.4.0",
       "hashPath": "graphql.server.transports.aspnetcore.3.4.0.nupkg.sha512"
+    },
+    "GraphQL.Server.Ui.Playground/3.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-k65Jz5k2/2gm9V2WX8tQ2Az5ok+6j1e2rL/zo3J98Wcl+/H/+L7A2xgLWqatlAYBU/RsFsnw0Y5OEjI/qQJAtQ==",
+      "path": "graphql.server.ui.playground/3.4.0",
+      "hashPath": "graphql.server.ui.playground.3.4.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Razor.Design/2.1.2": {
       "type": "package",
