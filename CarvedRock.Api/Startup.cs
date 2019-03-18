@@ -15,10 +15,12 @@ namespace CarvedRock.Api
     public class Startup
     {
         private readonly IConfiguration _config;
+        private readonly IHostingEnvironment _env;
 
-        public Startup(IConfiguration config)
+        public Startup(IConfiguration config, IHostingEnvironment env)
         {
             _config = config;
+            _env = env;
         }
 
         public void ConfigureServices(IServiceCollection services)
@@ -36,8 +38,9 @@ namespace CarvedRock.Api
             services.AddScoped<IDependencyResolver>(s => new FuncDependencyResolver(s.GetRequiredService));
             services.AddScoped<CarvedRockSchema>();
 
-            services.AddGraphQL(o => { o.ExposeExceptions = true; })
+            services.AddGraphQL(o => { o.ExposeExceptions = _env.IsDevelopment(); ; })
                 .AddGraphTypes(ServiceLifetime.Scoped)
+                .AddUserContextBuilder(context => context.User)
                 .AddDataLoader(); //adds caching layer essentially for refreshes
         }
 
