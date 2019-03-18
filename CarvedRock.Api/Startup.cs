@@ -31,6 +31,7 @@ namespace CarvedRock.Api
                (options => options.UseSqlServer(connection));
 
             services.AddScoped<ProductRepository>();
+            services.AddScoped<ProductReviewRepository>();
 
             services.AddScoped<IDependencyResolver>(s => new FuncDependencyResolver(s.GetRequiredService));
             services.AddScoped<CarvedRockSchema>();

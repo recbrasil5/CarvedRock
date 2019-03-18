@@ -13,7 +13,7 @@ namespace CarvedRock.Api.Data.Entities
 
         [StringLength(100)]
         public string Name { get; set; }
-        public ProductType Type { get; set; }
+        public ProductTypeEnum Type { get; set; }
         public string Description { get; set; }
 
         [Column(TypeName = "decimal(18,2)")]
@@ -24,5 +24,7 @@ namespace CarvedRock.Api.Data.Entities
 
         [StringLength(100)]
         public string PhotoFileName { get; set; }
+
+        public List<ProductReview> ProductReviews { get; set; }
     }
 }

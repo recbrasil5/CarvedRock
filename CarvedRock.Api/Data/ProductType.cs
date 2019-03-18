@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace CarvedRock.Api.Data
 {
-    public enum ProductType
+    public enum ProductTypeEnum
     {
         Boots,
         ClimbingGear,
