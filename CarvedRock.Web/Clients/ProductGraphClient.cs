@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using CarvedRock.Web.Models;
 using GraphQL.Client;
 using GraphQL.Common.Request;
+using GraphQL.Common.Response;
 
 namespace CarvedRock.Web.Clients
 {
@@ -50,6 +51,18 @@ namespace CarvedRock.Web.Clients
             var response = await _client.PostAsync(query);
             return response.GetDataFieldAs<ProductReviewModel>("createReview");
 
+        }
+
+        public async Task SubscribeToUpdates()
+        {
+            //https://www.nuget.org/packages/GraphQL.Client/2.0.0-alpha.3
+            var result = await _client.SendSubscribeAsync("subscription { reviewAdded { title productId } }");
+            result.OnReceive += Receive;
+        }
+
+        private void Receive(GraphQLResponse resp)
+        {
+            var review = resp.Data["reviewAdded"];
         }
     }
 }

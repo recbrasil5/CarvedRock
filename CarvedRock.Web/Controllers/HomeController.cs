@@ -31,6 +31,7 @@ namespace CarvedRock.Web.Controllers
 
         public async Task<IActionResult> ProductDetail(int productId)
         {
+            await _productGraphClient.SubscribeToUpdates();
             var product = await _productGraphClient.GetProduct(productId);
             return View(product);
         }

@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "9c066da26106b5956c0cd466c650bda4e522dd2c"
+    "signature": "b71aaed2537a56150fe54ea15e1016afa6d7d25f"
   },
   "compilationOptions": {
     "defines": [
@@ -26,6 +26,7 @@
         "dependencies": {
           "GraphQL": "2.4.0",
           "GraphQL.Server.Transports.AspNetCore": "3.4.0",
+          "GraphQL.Server.Transports.WebSockets": "3.4.0",
           "GraphQL.Server.Ui.Playground": "3.4.0",
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.AspNetCore.Razor.Design": "2.1.2",
@@ -104,6 +105,44 @@
         },
         "compile": {
           "lib/netstandard2.0/GraphQL.Server.Transports.AspNetCore.dll": {}
+        }
+      },
+      "GraphQL.Server.Transports.Subscriptions.Abstractions/3.4.0": {
+        "dependencies": {
+          "GraphQL": "2.4.0",
+          "GraphQL.Server.Core": "3.4.0",
+          "Microsoft.Extensions.Logging": "2.1.1",
+          "Newtonsoft.Json": "11.0.2",
+          "System.Threading.Tasks.Dataflow": "4.8.0",
+          "System.Threading.Tasks.Extensions": "4.5.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/GraphQL.Server.Transports.Subscriptions.Abstractions.dll": {
+            "assemblyVersion": "3.4.0.0",
+            "fileVersion": "3.4.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/GraphQL.Server.Transports.Subscriptions.Abstractions.dll": {}
+        }
+      },
+      "GraphQL.Server.Transports.WebSockets/3.4.0": {
+        "dependencies": {
+          "GraphQL": "2.4.0",
+          "GraphQL.Server.Transports.Subscriptions.Abstractions": "3.4.0",
+          "Microsoft.AspNetCore.WebSockets": "2.1.1",
+          "Microsoft.Extensions.Logging": "2.1.1",
+          "Newtonsoft.Json": "11.0.2",
+          "System.Reactive": "3.1.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/GraphQL.Server.Transports.WebSockets.dll": {
+            "assemblyVersion": "3.4.0.0",
+            "fileVersion": "3.4.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/GraphQL.Server.Transports.WebSockets.dll": {}
         }
       },
       "GraphQL.Server.Ui.Playground/3.4.0": {
@@ -298,6 +337,11 @@
           "System.Runtime": "4.3.0"
         }
       },
+      "System.Reactive/3.1.1": {
+        "dependencies": {
+          "System.Reactive.PlatformServices": "3.1.1"
+        }
+      },
       "System.Reactive.Core/3.1.1": {
         "dependencies": {
           "System.ComponentModel": "4.0.1",
@@ -346,11 +390,26 @@
           "lib/netstandard1.3/System.Reactive.Linq.dll": {}
         }
       },
+      "System.Reactive.PlatformServices/3.1.1": {
+        "dependencies": {
+          "System.Reactive.Linq": "3.1.1"
+        },
+        "runtime": {
+          "lib/netcoreapp1.0/System.Reactive.PlatformServices.dll": {
+            "assemblyVersion": "3.0.6000.0",
+            "fileVersion": "3.1.1.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp1.0/System.Reactive.PlatformServices.dll": {}
+        }
+      },
       "System.Runtime.InteropServices.WindowsRuntime/4.0.1": {
         "dependencies": {
           "System.Runtime": "4.3.0"
         }
       },
+      "System.Threading.Tasks.Dataflow/4.8.0": {},
       "System.Threading.ThreadPool/4.0.10": {
         "dependencies": {
           "System.Runtime": "4.3.0",
@@ -3333,6 +3392,20 @@
       "path": "graphql.server.transports.aspnetcore/3.4.0",
       "hashPath": "graphql.server.transports.aspnetcore.3.4.0.nupkg.sha512"
     },
+    "GraphQL.Server.Transports.Subscriptions.Abstractions/3.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rA9TxSb3bDiaHq45OAAl7KXfKTAGhwW2byICyH/2+JOq6e7GFwk69l/e5kgTsTched/RGewxFJHbJfFnBZElXg==",
+      "path": "graphql.server.transports.subscriptions.abstractions/3.4.0",
+      "hashPath": "graphql.server.transports.subscriptions.abstractions.3.4.0.nupkg.sha512"
+    },
+    "GraphQL.Server.Transports.WebSockets/3.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wpMBCOTxY2apSTCw34Gtx1Ndvt1KHtc6B7/zwK9uVBZqsYPjs5U/zRxdC/XWThzAOymXpTOGKluq40+5Lm5h+g==",
+      "path": "graphql.server.transports.websockets/3.4.0",
+      "hashPath": "graphql.server.transports.websockets.3.4.0.nupkg.sha512"
+    },
     "GraphQL.Server.Ui.Playground/3.4.0": {
       "type": "package",
       "serviceable": true,
@@ -3410,6 +3483,13 @@
       "path": "system.componentmodel/4.0.1",
       "hashPath": "system.componentmodel.4.0.1.nupkg.sha512"
     },
+    "System.Reactive/3.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jdLBDt+bTs26kUA7R0P3JPYnYt2NKvyUIBW4aZb7JUQLGTfdBebdzKtY9pMTXrjj/QwRZSyKBqfGXzO4Mh7Q0Q==",
+      "path": "system.reactive/3.1.1",
+      "hashPath": "system.reactive.3.1.1.nupkg.sha512"
+    },
     "System.Reactive.Core/3.1.1": {
       "type": "package",
       "serviceable": true,
@@ -3431,12 +3511,26 @@
       "path": "system.reactive.linq/3.1.1",
       "hashPath": "system.reactive.linq.3.1.1.nupkg.sha512"
     },
+    "System.Reactive.PlatformServices/3.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nWouPlttrYpZ0TALhhUqfxOIzs3ZA1ZwfHTlnP0SbuGaszKp+5kopaqyZ1sRmdlo8QXkfb+sRrDOA2hhxOpaGw==",
+      "path": "system.reactive.platformservices/3.1.1",
+      "hashPath": "system.reactive.platformservices.3.1.1.nupkg.sha512"
+    },
     "System.Runtime.InteropServices.WindowsRuntime/4.0.1": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-oIIXM4w2y3MiEZEXA+RTtfPV+SZ1ymbFdWppHlUciNdNIL0/Uo3HW9q9iN2O7T7KUmRdvjA7C2Gv4exAyW4zEQ==",
       "path": "system.runtime.interopservices.windowsruntime/4.0.1",
       "hashPath": "system.runtime.interopservices.windowsruntime.4.0.1.nupkg.sha512"
+    },
+    "System.Threading.Tasks.Dataflow/4.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CyD248zUJP2zTYFGhWZ3CnndgI9rFeyU3CMHHPZugsMenblyQw5GruwS0YaOBp0PdgpPvFhg5pqs0Yns0NvgNQ==",
+      "path": "system.threading.tasks.dataflow/4.8.0",
+      "hashPath": "system.threading.tasks.dataflow.4.8.0.nupkg.sha512"
     },
     "System.Threading.ThreadPool/4.0.10": {
       "type": "package",

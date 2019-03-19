@@ -64,7 +64,7 @@ WriteAttributeValue("", 262, product.PhotoFileName, 262, 22, false);
             WriteLiteral(" alt=\"Product image\" /></div>\r\n        <div class=\"col-2 my-auto\">");
             EndContext();
             BeginContext(351, 81, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6bd28c49eeb6494ba2831a4d8e77e69a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "675a8a0cf31d4753a9bb97793ba9b9ae", async() => {
                 BeginContext(416, 12, false);
 #line 11 "C:\dev\GraphQL\CarvedRock\CarvedRock.Web\Views\Home\Index.cshtml"
                                                                                               Write(product.Name);

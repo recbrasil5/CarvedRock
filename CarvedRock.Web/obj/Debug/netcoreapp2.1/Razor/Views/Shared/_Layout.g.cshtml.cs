@@ -44,7 +44,7 @@ namespace AspNetCore
             WriteLiteral("<!DOCTYPE html>\r\n\r\n<html>\r\n");
             EndContext();
             BeginContext(27, 217, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3744ef975ef54a109668ad3762d8242d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4337ba5916d74c8496e16dfdbeaae21f", async() => {
                 BeginContext(33, 204, true);
                 WriteLiteral("\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    <title>Carved Rock</title>\r\n    <link href=\"/bootstrap.min.css\" rel=\"stylesheet\" />\r\n    <link href=\"/carvedrock.css\" rel=\"stylesheet\" />\r\n");
                 EndContext();
@@ -64,7 +64,7 @@ namespace AspNetCore
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(246, 371, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "334dc13ab58844f4aac2de087c2c4467", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9f54048b72cf458a984314ce9c2fef05", async() => {
                 BeginContext(252, 331, true);
                 WriteLiteral(@"
     <div class=""container"">
