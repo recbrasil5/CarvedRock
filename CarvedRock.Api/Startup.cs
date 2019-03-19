@@ -25,10 +25,7 @@ namespace CarvedRock.Api
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc();
-
-            var connection = @"Server=localhost\sqlexpress;Database=CarvedRock;Trusted_Connection=True;ConnectRetryCount=0";
-            //var connection = _config["ConnectionStrings:CarvedRock"];
+            var connection = _config.GetConnectionString("CarvedRock");
             services.AddDbContext<CarvedRockDbContext>
                (options => options.UseSqlServer(connection));
 
@@ -38,7 +35,7 @@ namespace CarvedRock.Api
             services.AddScoped<IDependencyResolver>(s => new FuncDependencyResolver(s.GetRequiredService));
             services.AddScoped<CarvedRockSchema>();
 
-            services.AddGraphQL(o => { o.ExposeExceptions = _env.IsDevelopment(); ; })
+            services.AddGraphQL(o => { o.ExposeExceptions = _env.IsDevelopment(); })
                 .AddGraphTypes(ServiceLifetime.Scoped)
                 .AddUserContextBuilder(context => context.User)
                 .AddDataLoader(); //adds caching layer essentially for refreshes
@@ -46,13 +43,9 @@ namespace CarvedRock.Api
 
         public void Configure(IApplicationBuilder app, CarvedRockDbContext dbContext)
         {
-            //app.UseMvc(); //only if you need to do both REST and GraphQL
-
             app.UseGraphQL<CarvedRockSchema>();
             app.UseGraphQLPlayground(new GraphQLPlaygroundOptions());
             dbContext.Seed();
-            //app.UseGraphQL<CarvedRockSchema>();
-            //app.UseGraphQLPlayground(new GraphQLPlaygroundOptions());
         }
     }
 }

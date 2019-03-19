@@ -2,13 +2,13 @@ C:\dev\GraphQL\CarvedRock\CarvedRock.Api\bin\Debug\netcoreapp2.1\CarvedRock.Api.
 C:\dev\GraphQL\CarvedRock\CarvedRock.Api\bin\Debug\netcoreapp2.1\CarvedRock.Api.runtimeconfig.json
 C:\dev\GraphQL\CarvedRock\CarvedRock.Api\bin\Debug\netcoreapp2.1\CarvedRock.Api.runtimeconfig.dev.json
 C:\dev\GraphQL\CarvedRock\CarvedRock.Api\bin\Debug\netcoreapp2.1\CarvedRock.Api.dll
+C:\dev\GraphQL\CarvedRock\CarvedRock.Api\bin\Debug\netcoreapp2.1\CarvedRock.Api.pdb
+C:\dev\GraphQL\CarvedRock\CarvedRock.Api\obj\Debug\netcoreapp2.1\CarvedRock.Api.csprojAssemblyReference.cache
 C:\dev\GraphQL\CarvedRock\CarvedRock.Api\obj\Debug\netcoreapp2.1\CarvedRock.Api.csproj.CoreCompileInputs.cache
 C:\dev\GraphQL\CarvedRock\CarvedRock.Api\obj\Debug\netcoreapp2.1\CarvedRock.Api.RazorAssemblyInfo.cache
 C:\dev\GraphQL\CarvedRock\CarvedRock.Api\obj\Debug\netcoreapp2.1\CarvedRock.Api.RazorAssemblyInfo.cs
 C:\dev\GraphQL\CarvedRock\CarvedRock.Api\obj\Debug\netcoreapp2.1\CarvedRock.Api.AssemblyInfoInputs.cache
 C:\dev\GraphQL\CarvedRock\CarvedRock.Api\obj\Debug\netcoreapp2.1\CarvedRock.Api.AssemblyInfo.cs
 C:\dev\GraphQL\CarvedRock\CarvedRock.Api\obj\Debug\netcoreapp2.1\CarvedRock.Api.RazorTargetAssemblyInfo.cache
-C:\dev\GraphQL\CarvedRock\CarvedRock.Api\bin\Debug\netcoreapp2.1\CarvedRock.Api.pdb
 C:\dev\GraphQL\CarvedRock\CarvedRock.Api\obj\Debug\netcoreapp2.1\CarvedRock.Api.dll
 C:\dev\GraphQL\CarvedRock\CarvedRock.Api\obj\Debug\netcoreapp2.1\CarvedRock.Api.pdb
-C:\dev\GraphQL\CarvedRock\CarvedRock.Api\obj\Debug\netcoreapp2.1\CarvedRock.Api.csprojAssemblyReference.cache
